@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto';
+}
+
 .btn {
     border-radius: 0;
     border-right: 1px solid rgb(185, 183, 183);
@@ -9,16 +13,148 @@
 }
 
 .btn:hover {
-    background-color:#bcbcbc;
+    background-color:#6d6d6d;
     font-weight: 400;
 }
 
-span {
+.clothes {
     color:#929191;
 }
 
 header {
    border-bottom: 1px solid rgb(185, 183, 183);
-   padding: 30px;
-  
+   padding-top: 30px;
+   padding-bottom: 30px;
+   width: 100%;
+   padding-left: 5px;
+}
+
+.card-img-bottom {
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-title {
+    color: #929191;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px black;
+}
+
+a:hover {
+    color: white;
+    font-weight: 400;
+    text-shadow: 0px 0px 3px white;
+}
+
+.handbag {
+    grid-area: handbag;
+}
+
+.watch {
+    grid-area: watch;
+}
+
+.shoes {
+    grid-area: shoes;
+}
+
+.main-menu {
+    grid-area: main-menu;
+}
+
+.gridbox-menu {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 120px;
+    grid-template-areas: 'main-menu main-menu main-menu '
+                         'handbag  watch shoes';
+}
+
+img {
+    object-fit: cover;
+}
+
+.handbag, .watch, .shoes {
+    width: auto;
+    height: 120px;
+    
+}
+
+.card-text {
+    font-size: 14px;
+    color: rgb(222, 217, 217);
+    text-shadow: 0px 0px 3px black;
+}
+
+
+.item-1 {
+    grid-area: item-1;
+}
+
+.item-2 {
+    grid-area: item-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+}
+
+.item-4 {
+    grid-area: item-4;
+}
+
+.item-5 {
+    grid-area: item-5;
+}
+
+.item-6 {
+    grid-area: item-6;
+}
+
+.item-7 {
+    grid-area: item-7;
+}
+
+.item-8 {
+    grid-area: item-8;
+}
+
+.gridbox-items {
+    
+    text-align: center;
+    padding: 25px;
+    margin: 5px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'item-1 item-2 item-3 item-4'
+                         'item-5 item-6 item-7 item-8';
+}
+
+.card-body > p {
+    color: rgb(255, 0, 0);
+    text-shadow: none;
+}
+
+img {
+    height: 200px;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8 {
+    width: 200px;
+    height: auto;
+    border: none;
+}
+
+.discount {
+    text-decoration: line-through;
+    color: #6d6d6d;
+    font-size: 12px;
 }
