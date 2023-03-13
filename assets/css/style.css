@@ -40,12 +40,17 @@ header {
 }
 
 .card-title {
-    color: #929191;
+    color: #7e7e7e;
     text-decoration: none;
-    text-shadow: 0px 0px 3px black;
+    /* text-shadow: 0px 0px 3px black; */
 }
 
 a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.card-body > a:hover {
     color: white;
     font-weight: 400;
     text-shadow: 0px 0px 3px white;
@@ -158,3 +163,48 @@ img {
     color: #6d6d6d;
     font-size: 12px;
 }
+
+.contacts {
+    padding-top: 60px;
+    grid-area: contacts;
+    text-align: center;
+    border-top: 1px solid rgb(185, 183, 183);
+    border-bottom: 1px solid rgb(185, 183, 183);
+}
+
+.text-contacts {
+    font-size: 12px;
+}
+
+.info {
+    grid-area: info;
+}
+
+.service {
+    grid-area: service;
+}
+
+.extras {
+    grid-area: extras;
+}
+
+.account {
+    grid-area: account;
+}
+
+.bottom {
+    grid-area: bottom;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.gridbox-footer {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 50px;
+    grid-template-areas: 'contacts contacts contacts contacts'
+                         'info service extras account'
+                         'bottom bottom bottom bottom';
+}
+
